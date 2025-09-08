@@ -6,12 +6,12 @@ import heroImage from "@/assets/hero-home.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-hero" />
       
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 tracking-tight">
@@ -23,7 +23,7 @@ const Hero = () => {
           Your dream home awaits with our curated collection of luxury real estate.
         </p>
         
-        <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto shadow-elegant">
+        <div className="bg-gradient-glass backdrop-blur-glass rounded-2xl p-8 max-w-4xl mx-auto shadow-glass border border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Location</label>

@@ -55,7 +55,7 @@ const PropertySlider = () => {
   };
 
   return (
-    <section className="py-16 bg-muted">
+    <section className="py-20 bg-gradient-section-secondary backdrop-blur-soft border-y border-white/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -74,7 +74,7 @@ const PropertySlider = () => {
             >
               {properties.map((property) => (
                 <div key={property.id} className="w-full flex-shrink-0 px-2">
-                  <Card className="overflow-hidden shadow-soft hover:shadow-elegant transition-shadow duration-300">
+                  <Card className="overflow-hidden shadow-glass hover:shadow-elegant transition-all duration-500 bg-gradient-glass backdrop-blur-glass border border-white/20 hover:border-white/30">
                     <div className="relative">
                       <img 
                         src={property.image} 
@@ -89,7 +89,7 @@ const PropertySlider = () => {
                       <Button 
                         variant="ghost" 
                         size="icon"
-                        className="absolute top-4 right-4 bg-white/80 hover:bg-white text-foreground"
+                        className="absolute top-4 right-4 bg-gradient-glass backdrop-blur-soft hover:bg-white/20 text-foreground border border-white/20"
                       >
                         <Heart className="h-4 w-4" />
                       </Button>
@@ -137,7 +137,7 @@ const PropertySlider = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-soft"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-gradient-glass backdrop-blur-soft hover:bg-white/20 shadow-glass border border-white/20"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -146,7 +146,7 @@ const PropertySlider = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-soft"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-gradient-glass backdrop-blur-soft hover:bg-white/20 shadow-glass border border-white/20"
             onClick={nextSlide}
           >
             <ChevronRight className="h-4 w-4" />

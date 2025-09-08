@@ -20,10 +20,19 @@ export default {
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-glass': 'var(--gradient-glass)',
+        'gradient-section-primary': 'var(--gradient-section-primary)',
+        'gradient-section-secondary': 'var(--gradient-section-secondary)',
+        'gradient-section-accent': 'var(--gradient-section-accent)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'elegant': 'var(--shadow-elegant)',
+        'glass': 'var(--shadow-glass)',
+      },
+      backdropBlur: {
+        'glass': '16px',
+        'soft': '8px',
       },
       colors: {
         border: "hsl(var(--border))",
